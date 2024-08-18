@@ -1,0 +1,422 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+#Fotinha {
+  padding: 10px;
+}
+
+#logoComp {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+article {
+  padding: 2%;
+  margin-top: 60px; /* Ajuste para compensar a barra de navegação fixa */
+}
+
+header {
+  padding: 10% 0;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-color: #2d781e;
+  color: #fff;
+}
+
+#PequenosGUE {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+#Sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fundoR {
+  border: 2px solid #2d781e;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 2%;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#Parceiros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.linTop {
+  text-decoration: none;
+  padding: 1%;
+  color: #2d781e;
+  transition: color 0.3s ease;
+}
+
+.linTop:hover {
+  color: #1b4d12;
+}
+
+#Contato {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+
+footer {
+  text-align: center;
+  padding: 10% 10% 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2d781e;
+  color: #fff;
+}
+
+img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.produtos {
+  max-width: 100%;
+  padding: 2%;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #2d781e;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.produtos:hover {
+  transform: scale(1.05);
+}
+
+#Acessorios, #KitFesta, #Outros {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2%;
+}
+
+.titi {
+  padding: 1%;
+  padding-top: 5%;
+  text-align: center;
+  color: #2d781e;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #2d781e;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #1b4d12;
+  transform: scale(1.05);
+}
+
+strong {
+  color: #2d781e;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #87cd8c;
+}
+
+.lista {
+  text-align: left;
+}
+
+h1 {
+  color: #2d781e;
+}
+
+h3 {
+  color: #2d781e;
+}
+
+h4 {
+  color: #87cd8c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    padding: 20% 0;
+  }
+
+  nav {
+    padding: 15px;
+    justify-content: center;
+  }
+
+  #PequenosGUE {
+    width: 100%;
+    padding: 5%;
+  }
+
+  #Contato {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .produtos {
+    max-width: 100%;
+  }
+
+  footer {
+    padding: 20% 10% 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .produtos {
+    max-width: 100%;
+    margin: 5% 0;
+  }
+
+  #Fotinha {
+    padding: 5px;
+  }
+
+  header {
+    padding: 30% 0;
+  }
+
+  footer {
+    padding: 30% 10% 10%;
+  }
+}
+
+#ntiti{
+  padding-top: 10%;
+}
+
+/* Estilo para o header */
+#headerPrincipal {
+  background: linear-gradient(rgba(0, 128, 0, 0.7), rgba(0, 128, 0, 0.7)), url('https://example.com/path/to/your/image.jpg') no-repeat center center;
+  background-size: cover;
+  color: #ffffff; /* Texto branco */
+  text-align: center;
+  padding: 150px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  box-shadow: inset 0 0 0 1000px rgba(34, 139, 34, 0.5); /* Sombra com verde escuro */
+}
+
+.header-content {
+  max-width: 900px;
+  padding: 30px;
+  background-color: rgb(8, 58, 8, 0.8); /* Fundo verde escuro com opacidade */
+  border-radius: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 100, 0, 0.8); /* Sombra de texto verde escuro */
+  animation: fadeIn 2s ease-out;
+}
+
+#headerPrincipal h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ffffff; /* Branco puro para o título */
+}
+
+#headerPrincipal p {
+  font-size: 1.5rem;
+  color: #f0fff0; /* Verde claro suave para o texto */
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Responsividade */
+@media (max-width: 768px) {
+  #headerPrincipal h1 {
+    font-size: 2.2rem;
+  }
+
+  #headerPrincipal p {
+    font-size: 1.2rem;
+  }
+
+  .cta-button {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #headerPrincipal {
+    padding: 100px 15px;
+  }
+
+  #headerPrincipal h1 {
+    font-size: 1.8rem;
+  }
+
+  #headerPrincipal p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+}
