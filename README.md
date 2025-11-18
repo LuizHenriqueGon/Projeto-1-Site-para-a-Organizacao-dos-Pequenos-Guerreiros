@@ -95,3 +95,20 @@ O design utiliza a identidade visual da ONG para transmitir esperança e alegria
 ├── script.js             # Lógica do Slider e interatividade
 ├── index.html            # Página Principal (Home)
 └── produtos.html         # Página de Catálogo de Produtos
+````
+
+-----
+
+## 🔧 Como Executar
+
+Este é um projeto estático, portanto não requer instalação de dependências ou servidores complexos.
+
+1.  **Clone este repositório:**
+    ```bash
+    git clone [https://github.com/LuizHenriqueGon/NOME-DO-REPOSITORIO.git](https://github.com/LuizHenriqueGon/NOME-DO-REPOSITORIO.git)
+    ```
+2.  **Acesse a pasta do projeto:**
+    Navegue até o diretório onde os arquivos foram salvos.
+3.  **Abra o site:**
+    Basta dar um duplo clique no arquivo `index.html` para abri-lo em seu navegador padrão.
+
